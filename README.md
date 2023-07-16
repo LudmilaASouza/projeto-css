@@ -16,5 +16,5 @@ Projeto desenvolvido durante o Bootcamp da SoulCode para demonstrar conhecimento
 
 # Deploy do projeto :computer:
 
-[https://ludmilaasouza.github.io/projeto-css-portifolio/](https://ludmilaasouza.github.io/projeto-css/)https://ludmilaasouza.github.io/projeto-css/
+[https://ludmilaasouza.github.io/projeto-css-portifolio/](https://ludmilaasouza.github.io/projeto-css/)
 
