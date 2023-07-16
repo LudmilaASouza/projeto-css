@@ -8,53 +8,54 @@
     --azul-escuro: #2b2d42;
     --azul-medio: #8d99ae;
     --azul-claro: #edf2f4;
-    --icon-color: #fff;
-    --icon-hover: #fff;
     --background-color: #00c800;
     --background-hover: #009600;
+    --icon-color: #fff;
+    --icon-hover: #fff;    
 }
+
 .body-container{
     display: flex;  
 }
+
 .side-bar {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    align-items: center;  
     background-color: var(--azul-escuro);
+    min-height: 100vh;    
     width: 20vw;
-    padding: 20px;  
+    padding: 20px;
+    align-items: center;  
     position: fixed;
 }
 
 .profile {
-    text-align: center;
-    margin: 10px;
     font-family: 'Great Vibes', cursive;
     font-size: 30px;
+    text-align: center;
     color: var(--azul-claro);
+    margin-bottom: 20px; 
 }
 
 #img-profile{
     width: 100%;
+    border-radius: 50%;
+    border-bottom: 2px solid var(--azul-claro);
+    border-width: 3px;
     margin-bottom: 15px;
-    border-radius: 50% ;
-    border-color: var(--azul-medio);
-    border-bottom: 2px solid var(--azul-claro) ;
-    border-width: 2px;
 }
 
 .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--azul-claro); 
+    border-radius: 9px;
     border: none;
-    padding: 10px;
     text-decoration: none;
     cursor: pointer;
     transition: background 0.5s;
-    border-radius: 9px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    background-color: var(--azul-claro);   
+    padding: 10px;
+    width: 100%;  
 }
 
 .btn a {
@@ -157,11 +158,10 @@
 }
 
 .caption{
-    font-weight: bolder;
     font-family: 'Poppins', sans-serif;
+    font-weight: bolder;    
     color: var(--azul-escuro);
-    margin: 5px;
-    
+    margin: 5px;    
 }
 
 .languages {
@@ -323,7 +323,7 @@
 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px), (max-width: 480px) {
     .body-container {
         flex-direction: column;
     }
@@ -333,6 +333,11 @@
         position: static;
     }
 
+    #img-profile {
+        width: 60%;
+    }
+
+
     .main-container {
         width: 100%;
         margin: 0;
@@ -341,19 +346,5 @@
 
     .section1, .section2, .section3{
         background-color: rgba(255, 255, 255, 0.534);
-    }
-}
-
-
-@media (max-width: 480px) {
-    .side-bar {
-        width: 100%;
-        position: static;
-    }
-
-    .main-container {
-        width: 100%;
-        margin: 0;
-        padding-top: 20px;
     }
 }
